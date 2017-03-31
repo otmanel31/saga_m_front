@@ -12,15 +12,16 @@ class App extends Component {
         <div className="App-header">
           {/*<img src={logo} className="App-logo" alt="logo" />*/}
           <h1>SAGA-M App</h1>
-          <p> 
+          
+        </div>
+
+          <div>
+            <p> 
               <span><Link to='/menu'>Home | </Link></span>
               <span><Link to='/alerts'>Alerts | </Link></span>
               <span><Link to='/events'>Events | </Link></span>
               <span><Link to='/message'>Message</Link></span>
-          </p>
-        </div>
-
-          <div>
+            </p>
             {page}
           </div>
 

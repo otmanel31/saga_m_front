@@ -6,9 +6,9 @@ export const api = store => next => action => {
 
         const [START, SUCCES, ERROR] = types
 
-        const doFetch_getTypes = (url) => {
+        const doFetch_getTypes = (url, options = {}) => {
         //const baseUrl = 'http://localhost:8080'
-        return fetch(url)
+        return fetch(url, options)
         }
         promise(doFetch_getTypes)
         .then(result => {
@@ -30,6 +30,5 @@ export const api = store => next => action => {
         return next(action)
     }
 }
-
 
 export default api

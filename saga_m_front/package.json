@@ -4,9 +4,13 @@
   "private": true,
   "proxy": "http://127.0.0.1:8080",
   "devDependencies": {
-    "react-scripts": "0.9.4"
+    "onsenui": "^2.2.0",
+    "react-onsenui": "^1.2.0",
+    "react-scripts": "0.9.4",
+    "redux-thunk": "^2.2.0"
   },
   "dependencies": {
+    "materialize-css": "^0.98.1",
     "react": "^15.4.2",
     "react-addons": "^0.9.1-deprecated",
     "react-dom": "^15.4.2",

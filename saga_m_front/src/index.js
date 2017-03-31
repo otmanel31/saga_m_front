@@ -16,9 +16,10 @@ import {createStore, applyMiddleware} from 'redux'
 import reducer from './component/reducer'
 import { composeWithDevTools } from 'redux-devtools-extension';
 import api from './component/api'
+import thunk from 'redux-thunk'
 
 const store = createStore(reducer, composeWithDevTools(
-  applyMiddleware(api
+  applyMiddleware(thunk, api
 )))
 
 const routes = 

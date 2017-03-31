@@ -1,7 +1,8 @@
-import {FETCH_SUCCES, FETCH_ERROR} from './action'
+import {FETCH_SUCCES, FETCH_ERROR, LOCAL_SUCCES} from './action'
 
 const initialState = {
-    result: []
+    result: [],
+    img: null
 }
 const reducer = (state= initialState, action) => {
     switch(action.type){
